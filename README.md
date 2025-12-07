@@ -13,8 +13,9 @@ Objectif : installer MongoDB en local de façon propre, sécurisée et reproduct
 ### 2. Docker Desktop
 - Téléchargement : https://www.docker.com/products/docker-desktop/
 - Version installée : Docker Desktop 4.52.0
-- Installation du noyau WSL : ``wsl –install`` via PowerShell
-- Ou mise à jour du noyau WSL : ``wsl –update`` via PowerShell
+- Installation du noyau WSL : ``wsl --install`` via PowerShell
+- Ou mise à jour du noyau WSL : ``wsl --update`` via PowerShell
+- Redémarre le Pc pour activer la modification : ``Restart-Computer`` via PowerShell
 
 ### 3. Installation de MongoDB (Docker)
 - Récupération de l’image officielle : ``docker pull mongo:latest``
@@ -149,8 +150,10 @@ docker exec -it mongodb-medical mongosh -u admin -p admin1234
 ```
 
 ```javascript
-use medical_db      // pointe sur la bdd medical_db
-db.getUsers()       // vérifie si tous les utilisateurs ont été créés
+use medical_db          // pointe sur la bdd medical_db
+db.getUsers()           // vérifie si tous les utilisateurs ont été créés
+show collections        // doit afficher "patients"
+db.patients.findOne()   // affiche le premier patient
 ```
 
 ### 4. Migration des données avec python
@@ -163,6 +166,9 @@ Pipeline complet de migration du dataset médical (`healthcare_dataset.csv`) ver
 medical-migration/
 ├── data/
 │   └── healthcare_dataset.csv          # Dataset source (55 500 patients)
+├── images/
+├── init-db/
+│   └── create-users.js                 # Création des utilisateurs
 ├── logs/
 │   └── migration_report.log            # Log détaillé de chaque exécution (UTF-8, accents OK)
 ├── src/
@@ -170,6 +176,8 @@ medical-migration/
 │   └── connection.py                   # Classe pour se connecter à MongoDB
 ├── .env                                # Variables d'environnement (NE JAMAIS commiter !)
 ├── .gitignore
+├── docker-compose.yml
+├── Dockerfile
 ├── requirements.txt
 └── README.md
 ```

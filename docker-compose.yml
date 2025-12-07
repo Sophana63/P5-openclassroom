@@ -1,5 +1,4 @@
-version: '3.9'
-
+name: P5-medical-migration
 services:
   mongo:
     image: mongo:7.0.14
@@ -13,8 +12,29 @@ services:
       - "27017:27017"
     volumes:
       - mongo-data:/data/db
-      - ./init-db:/docker-entrypoint-initdb.d   # pour créer les users + rôles automatiquement
-    command: --auth
+      - ./init-db:/docker-entrypoint-initdb.d
+    command: --auth --quiet
+
+  migration:
+    build: .
+    container_name: medical-migration
+    env_file:
+      - .env                          # ← charge le .env 
+    volumes:
+      - .:/app                        # pour voir les logs sur ton PC
+    working_dir: /app
+    depends_on:
+      - mongo
+    # Charge MongoDB
+    command: >
+      sh -c "
+        echo 'Attente de MongoDB...' &&
+        until python -c 'from pymongo import MongoClient; MongoClient(\"mongo:27017\", serverSelectionTimeoutMS=2000).admin.command(\"ping\")' 2>/dev/null; do
+          sleep 2
+        done &&
+        echo 'MongoDB prêt ! Lancement de la migration...' &&
+        python -m src.migration
+      "
 
 volumes:
   mongo-data:

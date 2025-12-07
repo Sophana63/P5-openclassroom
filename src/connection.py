@@ -8,7 +8,7 @@ load_dotenv()
 
 class MongoDBConnection:
     def __init__(self):
-        self.host = os.getenv("MONGO_HOST")
+        self.host = os.getenv("MONGO_HOST") if os.path.exists("/.dockerenv") else "localhost"
         self.port = int(os.getenv("MONGO_PORT"))
         self.username = os.getenv("MONGO_USER")
         self.password = os.getenv("MONGO_PASSWORD")

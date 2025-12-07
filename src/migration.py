@@ -5,7 +5,7 @@ import pandas as pd
 from tabulate import tabulate
 
 # Pour une connexion sécurisée
-from connection import MongoDBConnection
+from .connection import MongoDBConnection
 
 # ===================== CONFIGURATION =====================
 CSV_PATH = "./data/healthcare_dataset.csv"
