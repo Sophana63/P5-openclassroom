@@ -5,7 +5,7 @@ from pymongo.collection import Collection
 import pandas as pd
 import json
 from pathlib import Path
-from connection import MongoDBConnection
+from datetime import datetime 
 
 # Fonction de conversion pour JSON
 def convert_doc(doc):
@@ -26,11 +26,17 @@ def convert_doc(doc):
 output_dir = Path("data")
 output_dir.mkdir(exist_ok=True)
 
+# Pour générer le timestamp
+def get_timestamp() -> str:
+    """Retourne le timestamp au format YYYYMMDD_HHMMSS"""
+    return datetime.now().strftime("%Y%m%d_%H%M%S")
+
 # Export JSON
 def export_json(collection: Collection):
     data = list(collection.find())
     data_clean = [convert_doc(d) for d in data]
-    output_file = "data/collection.json"
+    timestamp = get_timestamp()
+    output_file = f"data/collection_export_{timestamp}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(data_clean, f, ensure_ascii=False, indent=4)
     print(f"✅ Export JSON terminé : {output_file}")
@@ -40,7 +46,8 @@ def export_json(collection: Collection):
 def export_csv(collection: Collection):
     data = list(collection.find())
     df = pd.DataFrame(data)
-    output_file = "data/collection.csv"
+    timestamp = get_timestamp()
+    output_file = f"data/collection_export_{timestamp}.csv"
     df.to_csv(output_file, index=False, encoding="utf-8")
     print(f"✅ Export CSV terminé : {output_file}")
 
@@ -49,6 +56,7 @@ def export_csv(collection: Collection):
 def export_excel(collection: Collection):
     data = list(collection.find())
     df = pd.DataFrame(data)
-    output_file = "data/collection.xlsx"
+    timestamp = get_timestamp()
+    output_file = f"data/collection_export_{timestamp}.xlsx"
     df.to_excel(output_file, index=False)
     print(f"✅ Export Excel terminé : {output_file}")

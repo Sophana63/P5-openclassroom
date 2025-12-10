@@ -172,8 +172,10 @@ medical-migration/
 ├── logs/
 │   └── migration_report.log            # Log détaillé de chaque exécution (UTF-8, accents OK)
 ├── src/
-│   └── migration.py                    # Script principal de migration
+│   └── migration.py                    # Script principal de migration (importation des données)
 │   └── connection.py                   # Classe pour se connecter à MongoDB
+│   └── crud.py                         # Script CRUD (Create, Read, Update, Delete) 
+│   └── export.py                       # Script pour exporter la bdd en CSV, JSON ou Excel(xlsx)
 ├── .env                                # Variables d'environnement (NE JAMAIS commiter !)
 ├── .gitignore
 ├── docker-compose.yml
@@ -201,6 +203,22 @@ medical-migration/
   - Nettoyage automatique de la collection avant migration (`drop` contrôlé par variable)
   - Génération d’identifiant métier lisible : `patient_id` → `P00001`, `P00002`, …, `P55500`
   - Logs complets et lisibles : Fichier `logs/migration_report.log` en **UTF-8** (pour les accents : é, è, ç, à…)
+- ``crud.py`` :
+  - Implémente un **CRUD complet** (Create, Read, Update, Delete) sur la collection `patients`
+  - Validation stricte des données à l’ajout et à la mise à jour (âge entre 0-150, groupe sanguin valide, dates au format YYYY-MM-DD, etc.)
+  - Génération automatique et incrémentale de `patient_id` (P00001 → P55501…)
+  - Index unique sur `patient_id` pour empêcher les doublons
+  - Recherche intelligente : par `patient_id` (exact) ou par nom (recherche partielle, insensible à la casse)
+  - Suppression sécurisée avec confirmation interactive en mode console (oui/NON)
+  - Messages utilisateur clairs (✔️, ❌, ⚠️) et logging détaillé
+- ``export.py`` :
+  - Permet d’exporter la collection `patients` dans **3 formats** :
+    - **JSON** : format natif MongoDB, idéal pour sauvegarde ou transfert
+    - **CSV** : compatible Excel/Google Sheets, avec encodage UTF-8 (accents préservés)
+    - **Excel (XLSX)** : fichier `.xlsx` directement ouvrable dans Excel/LibreOffice
+  - Export complet ou filtré (par exemple : uniquement certains champs ou patients spécifiques)
+  - Nommage automatique des fichiers avec timestamp : `patients_export_20251210.json`
+  - Gestion propre des dates et types complexes pour une lecture parfaite dans les tableurs
 
   ### AWS
 
