@@ -13,7 +13,7 @@ services:
     volumes:
       - mongo-data:/data/db
       - ./init-db:/docker-entrypoint-initdb.d
-    command: --auth --quiet
+    command: --auth --quiet --logpath /dev/null
 
   migration:
     build: .
@@ -33,7 +33,7 @@ services:
           sleep 2
         done &&
         echo 'MongoDB prêt ! Lancement de la migration...' &&
-        python -m src.migration
+        python main.py
       "
 
 volumes:

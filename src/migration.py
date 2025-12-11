@@ -77,7 +77,7 @@ def generate_patient_id(row_index: int) -> str:
 print("==========================================")
 print(f"Suppression de l'ancienne collection ''{mongo.collection_name}' si elle existe...")
 collection.drop()                                     
-print(f"Collection '{mongo.collection_name} supprimée (ou inexistante → OK)")
+print(f"Collection '{mongo.collection_name}' supprimée (ou inexistante → OK)")
 logging.info("Ancienne collection supprimée avant nouvelle migration")
 print("==========================================")
 
@@ -123,10 +123,3 @@ def migrate():
 
     return True
 
-# ===================== EXÉCUTION =====================
-
-success = migrate()
-if success:    
-    print("\nSuccès de la migration !")
-else:
-    print("\nMigration échouée. Voir migration_report.log")

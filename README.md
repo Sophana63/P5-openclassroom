@@ -90,7 +90,8 @@ print("Tous les 3 utilisateurs ont été créés avec succès !");
 ### 3. Lancement du projet
 
 ```bash
-docker compose up -d
+docker compose down --rmi all --volumes    # Pour supprimer tous les volumes
+docker compose up --build
 ```
 - ``up`` : démarre tous les services définis.
 - ``-d`` : permet au terminal de rendre la main immédiatement.
@@ -145,7 +146,7 @@ medical-migration/
 - ``.gitignore`` : indique à Git les fichiers ou les répertoires à ignorer (comme le .env par exemple)
 
 <br>
-<b>Fichiers python:</b>
+<b>Fichiers python (dossier src/):</b>
 
 - [connection.py](src/connection.py) : 
   - Dédié à la création et à la gestion de la connexion à MongoDB
@@ -171,7 +172,7 @@ medical-migration/
     - **CSV** : compatible Excel/Google Sheets, avec encodage UTF-8 (accents préservés)
     - **Excel (XLSX)** : fichier `.xlsx` directement ouvrable dans Excel/LibreOffice
   - Export complet ou filtré (par exemple : uniquement certains champs ou patients spécifiques)
-  - Nommage automatique des fichiers avec timestamp : `patients_export_20251210.json`
+  - Nommage automatique des fichiers avec timestamp : `patients_export_20251210_174812.json`
   - Gestion propre des dates et types complexes pour une lecture parfaite dans les tableurs
 
   ### AWS

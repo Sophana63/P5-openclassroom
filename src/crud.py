@@ -3,7 +3,7 @@ from pymongo.errors import DuplicateKeyError
 from datetime import datetime
 import logging, os
 from dotenv import load_dotenv
-from connection import MongoDBConnection
+from .connection import MongoDBConnection
 
 
 # ===================== INITIALISATION DE LA CONNEXION =====================
@@ -164,7 +164,7 @@ def add_patient(patient_data: dict) -> str:
     # Vérifie s'il existe déjà (au cas où)
     try:
         result = collection.insert_one(validated)
-        return f"✔️ Patient ajouté avec _id {validated['patient_id']}"
+        return f"✔️ Patient {validated['Name']} ajouté avec l'id {validated['patient_id']}"
     except DuplicateKeyError:
         return "❌ Patient non ajouté — patient_id déjà existant. Réessayez."
     
@@ -327,54 +327,3 @@ def delete_patient(patient_id: str) -> str:
         return f"✔️ Patient {patient_id} supprimé."
     except Exception as e:
         return f"❌ Erreur lors de la suppression : {e}"
-
-# read_patient("P00042")                    # → recherche par ID
-# read_patient("Bobby")                     # → recherche par nom (partielle)
-# read_patient("jackson")                   # → trouve "Bobby JacksOn" (insensible à la casse)
-# read_patient("Marie Dupont")              # → trouve si le nom contient "Marie" ou "Dupont"
-# read_patient("P11005")
-
-# test_id = "P55503"  # change avec un ID existant dans ta base
-
-# print("\n--- Lecture ---")
-# read_patient(test_id)
-
-# print("\n--- Mise à jour ---")
-# updates = {
-#     "Age": 46,
-#     "Medical Condition": "Diabète de type 2 stabilisé",
-#     "Test Results": "Normal"
-# }
-# print(update_patient(test_id, updates))
-
-# print("\n--- Lecture après mise à jour---")
-# read_patient(test_id)
-
-# print("\n--- Suppression ---")
-# print(delete_patient("P55502"))
-
-# patient = {
-#     "Name": "John Doe",
-#     "Age": "45",
-#     "Gender": "Male",
-#     "Blood Type": "O+",
-#     "Medical Condition": "Diabetes",
-#     "Date of Admission": "2024-01-15",
-#     "Doctor": "Dr. Smith",
-#     "Hospital": "General Hospital",
-#     "Insurance Provider": "Mutuelle X",
-#     "Billing Amount": "1234.5666666",
-#     "Room Number": "101",
-#     "Admission Type": "Emergency",
-#     "Discharge Date": "2024-01-20",
-#     "Medication": "Insulin",
-#     "Test Results": "Stable"
-# }
-
-# print(add_patient(patient))
-
-from export import *
-
-export_json(collection)
-export_csv(collection)
-export_excel(collection)

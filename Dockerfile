@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3.11
 
 WORKDIR /app
 
@@ -13,4 +13,4 @@ COPY . .
 RUN mkdir -p logs
 
 # Lance le script de migration
-CMD ["python", "-m", "src.migration"]
+CMD ["python", "-m", "main"]
