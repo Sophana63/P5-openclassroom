@@ -36,7 +36,7 @@ def export_json(collection: Collection):
     data = list(collection.find())
     data_clean = [convert_doc(d) for d in data]
     timestamp = get_timestamp()
-    output_file = f"data/collection_export_{timestamp}.json"
+    output_file = f"export/collection_export_{timestamp}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(data_clean, f, ensure_ascii=False, indent=4)
     print(f"✅ Export JSON terminé : {output_file}")
@@ -47,7 +47,7 @@ def export_csv(collection: Collection):
     data = list(collection.find())
     df = pd.DataFrame(data)
     timestamp = get_timestamp()
-    output_file = f"data/collection_export_{timestamp}.csv"
+    output_file = f"export/collection_export_{timestamp}.csv"
     df.to_csv(output_file, index=False, encoding="utf-8")
     print(f"✅ Export CSV terminé : {output_file}")
 
@@ -57,6 +57,6 @@ def export_excel(collection: Collection):
     data = list(collection.find())
     df = pd.DataFrame(data)
     timestamp = get_timestamp()
-    output_file = f"data/collection_export_{timestamp}.xlsx"
+    output_file = f"export/collection_export_{timestamp}.xlsx"
     df.to_excel(output_file, index=False)
     print(f"✅ Export Excel terminé : {output_file}")
