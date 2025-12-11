@@ -1,0 +1,175 @@
+migration | 2025-12-11 13:12:14.361 | Attente de MongoDB...
+migration | 2025-12-11 13:12:14.969 | MongoDB prêt ! Lancement de la migration...
+migration | 2025-12-11 13:12:32.344 | Connexion à MongoDB en cours...
+migration | 2025-12-11 13:12:32.344 | Connexion MongoDB réussie
+migration | 2025-12-11 13:12:32.344 | Connecté à la base 'medical_db' → collection 'patients'
+migration | 2025-12-11 13:12:32.344 | ==========================================
+migration | 2025-12-11 13:12:32.344 | Suppression de l'ancienne collection ''patients' si elle existe...
+migration | 2025-12-11 13:12:32.344 | Collection 'patients' supprimée (ou inexistante → OK)
+migration | 2025-12-11 13:12:32.344 | ==========================================
+migration | 2025-12-11 13:12:32.344 | Initialisation de connexion à MongoDB...
+migration | 2025-12-11 13:12:32.344 | Connexion MongoDB réussie
+migration | 2025-12-11 13:12:32.344 | Connecté → medical_db.patients
+migration | 2025-12-11 13:12:32.344 | Index unique sur 'patient_id' vérifié/créé
+migration | 2025-12-11 13:12:32.344 | ============================================================
+migration | 2025-12-11 13:12:32.344 | DÉMARRAGE DE main.py
+migration | 2025-12-11 13:12:32.344 | ============================================================
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | Démarrage de la migration...
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | Vérification de l'intégrité des données...
+migration | 2025-12-11 13:12:32.344 | → 55,500 lignes | 15 colonnes
+migration | 2025-12-11 13:12:32.344 | Données propres et prêtes pour la migration
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | Insertion de 55,500 patients par batchs de 1000...
+migration | 2025-12-11 13:12:32.344 | Progression : 1,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 2,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 3,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 4,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 5,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 6,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 7,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 8,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 9,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 10,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 11,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 12,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 13,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 14,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 15,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 16,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 17,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 18,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 19,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 20,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 21,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 22,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 23,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 24,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 25,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 26,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 27,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 28,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 29,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 30,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 31,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 32,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 33,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 34,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 35,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 36,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 37,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 38,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 39,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 40,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 41,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 42,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 43,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 44,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 45,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 46,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 47,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 48,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 49,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 50,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 51,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 52,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 53,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 54,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 55,000/55,500
+migration | 2025-12-11 13:12:32.344 | Progression : 55,500/55,500
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | MIGRATION TERMINÉE EN 0:00:01.183576 !
+migration | 2025-12-11 13:12:32.344 | → 55,500 patients insérés dans MongoDB
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | Succès de la migration !
+migration | 2025-12-11 13:12:32.344 | Collection(Database(MongoClient(host=['mongo:27017'], document_class=dict, tz_aware=False, connect=True, authsource='admin', authmechanism='SCRAM-SHA-256'), 'medical_db'), 'patients')
+migration | 2025-12-11 13:12:32.344 | ✔️ Patient John Doe ajouté avec l'id P55501
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | --- Lecture du dernier patient enregistré---
+migration | 2025-12-11 13:12:32.344 | ✔️ Patient trouvé par ID : P55501
+migration | 2025-12-11 13:12:32.344 |    → P55501 | John Doe | 45 ans | Diabetes
+migration | 2025-12-11 13:12:32.344 |      Admission : 15/01/2024 | Hôpital : General Hospital
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | --- Mise à jour ---
+migration | 2025-12-11 13:12:32.344 | ✔️ Patient P55501 mis à jour avec succès.
+migration | 2025-12-11 13:12:32.344 | ✔️ Mise à jour réussie pour P55501
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | --- Lecture après mise à jour---
+migration | 2025-12-11 13:12:32.344 | ✔️ Patient trouvé par ID : P55501
+migration | 2025-12-11 13:12:32.344 |    → P55501 | John Doe | 46 ans | Diabète de type 2 stabilisé
+migration | 2025-12-11 13:12:32.344 |      Admission : 15/01/2024 | Hôpital : General Hospital
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | --- Suppression du patient ---
+migration | 2025-12-11 13:12:32.344 | 🗑️ Patient P55501 supprimé définitivement.
+migration | 2025-12-11 13:12:32.344 | ✔️ Patient P55501 supprimé.
+migration | 2025-12-11 13:12:32.344 | 
+migration | 2025-12-11 13:12:32.344 | --- Test de recherche par nom du patient 'jackson' ---
+migration | 2025-12-11 13:12:32.344 | ✔️ 20 patient(s) trouvé(s) contenant 'jackson' dans le nom :
+migration | 2025-12-11 13:12:32.344 |    → P00001 | Bobby JacksOn | 30 ans | Cancer
+migration | 2025-12-11 13:12:32.344 |      Admission : 2024-01-31 | Hôpital : Sons and Miller
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P00671 | liSA JAcKsOn | 44 ans | Hypertension
+migration | 2025-12-11 13:12:32.344 |      Admission : 2019-12-20 | Hôpital : Wood-Herring
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P00825 | RACHeL jaCKSON | 82 ans | Arthritis
+migration | 2025-12-11 13:12:32.344 |      Admission : 2020-07-17 | Hôpital : and Roberson Lee Young,
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P01161 | RHonDa JAcKsoN | 59 ans | Asthma
+migration | 2025-12-11 13:12:32.344 |      Admission : 2020-02-24 | Hôpital : Nguyen, Simmons and Johnson
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P01343 | tammy jaCKSon | 77 ans | Hypertension
+migration | 2025-12-11 13:12:32.344 |      Admission : 2024-02-14 | Hôpital : Gonzalez and Stevens Ruiz,
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P01992 | JoRdAn JACkSon | 71 ans | Cancer
+migration | 2025-12-11 13:12:32.344 |      Admission : 2021-09-19 | Hôpital : Cook and Craig, Herrera
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P02179 | niCOle jAcKSoN | 58 ans | Cancer
+migration | 2025-12-11 13:12:32.344 |      Admission : 2020-06-03 | Hôpital : LLC Miller
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P02594 | vIctoRIA JACKson | 41 ans | Hypertension
+migration | 2025-12-11 13:12:32.344 |      Admission : 2023-09-26 | Hôpital : Edwards-Johnson
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P02926 | Mr. pHIlIP jAcKSon V | 29 ans | Asthma
+migration | 2025-12-11 13:12:32.344 |      Admission : 2023-01-06 | Hôpital : Rogers Inc
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P03092 | tIffANy jaCKsON | 42 ans | Asthma
+migration | 2025-12-11 13:12:32.344 |      Admission : 2022-02-24 | Hôpital : Parker LLC
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P03612 | KeLSey jacksOn | 74 ans | Hypertension
+migration | 2025-12-11 13:12:32.344 |      Admission : 2020-12-25 | Hôpital : Moore Inc
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P03672 | jENnIfER JaCKson | 34 ans | Obesity
+migration | 2025-12-11 13:12:32.344 |      Admission : 2020-04-29 | Hôpital : Lee Ltd
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P03819 | STeVEN jACkSon | 31 ans | Asthma
+migration | 2025-12-11 13:12:32.344 |      Admission : 2023-03-12 | Hôpital : King Group
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P03932 | JASon jaCKSon | 39 ans | Asthma
+migration | 2025-12-11 13:12:32.344 |      Admission : 2023-07-20 | Hôpital : and Butler Cordova, Rodriguez
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P04007 | MerEdIth jACKSOn | 78 ans | Asthma
+migration | 2025-12-11 13:12:32.344 |      Admission : 2021-04-19 | Hôpital : Leach PLC
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P04057 | JOHN JACkSON | 74 ans | Asthma
+migration | 2025-12-11 13:12:32.344 |      Admission : 2021-08-31 | Hôpital : LLC Simmons
+migration | 2025-12-11 13:12:32.344 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.344 |    → P04137 | IAn jaCKsoN | 38 ans | Hypertension
+migration | 2025-12-11 13:12:32.344 |      Admission : 2019-05-14 | Hôpital : Villegas-Pacheco
+migration | 2025-12-11 13:12:32.345 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.345 |    → P04308 | KAtHlEEN jACksOn | 82 ans | Arthritis
+migration | 2025-12-11 13:12:32.345 |      Admission : 2021-02-08 | Hôpital : LLC Williams
+migration | 2025-12-11 13:12:32.345 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.345 |    → P04468 | bARbara jACkSON | 44 ans | Hypertension
+migration | 2025-12-11 13:12:32.345 |      Admission : 2023-08-03 | Hôpital : Hood-Morgan
+migration | 2025-12-11 13:12:32.345 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.345 |    → P04488 | brittaNY JAcKsoN | 37 ans | Asthma
+migration | 2025-12-11 13:12:32.345 |      Admission : 2022-10-24 | Hôpital : Smith-King
+migration | 2025-12-11 13:12:32.345 |    --------------------------------------------------
+migration | 2025-12-11 13:12:32.345 | 
+migration | 2025-12-11 13:12:32.345 | --- Exportation de la BDD au format CSV, JSON et Excel ---
+migration | 2025-12-11 13:12:32.345 | ✅ Export JSON terminé : export/collection_export_20251211_121216.json
+migration | 2025-12-11 13:12:32.345 | ✅ Export CSV terminé : export/collection_export_20251211_121218.csv
+migration | 2025-12-11 13:12:32.345 | ✅ Export Excel terminé : export/collection_export_20251211_121219.xlsx

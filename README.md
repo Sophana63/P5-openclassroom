@@ -133,6 +133,7 @@ medical-migration/
 │   └── export.py                       # Script pour exporter la bdd en CSV, JSON ou Excel(xlsx)
 ├── .env                                # Variables d'environnement (NE JAMAIS commiter !)
 ├── .gitignore
+├── main.py                             # Script principal d’exécution et de démonstration du projet
 ├── docker-compose.yml
 ├── Dockerfile
 ├── requirements.txt
@@ -174,6 +175,27 @@ medical-migration/
   - Export complet ou filtré (par exemple : uniquement certains champs ou patients spécifiques)
   - Nommage automatique des fichiers avec timestamp : `patients_export_20251210_174812.json`
   - Gestion propre des dates et types complexes pour une lecture parfaite dans les tableurs
+- [main.py](main.py) :
+  - Script principal d’exécution et de démonstration du projet
+  - Orchestre l’ensemble du pipeline : migration des données CSV, opérations CRUD et export multi-format
+  - Lance automatiquement la migration complète du dataset au démarrage
+  - Effectue une série de tests fonctionnels en chaîne :
+    - Ajout d’un patient de test
+    - Lecture du dernier patient ajouté
+    - Mise à jour de certains champs
+    - Vérification de la mise à jour
+    - Suppression du patient de test (avec confirmation sauf sous docker)
+    - Recherche intelligente par nom (exemple avec "jackson")
+    - Export complet de la collection dans les formats JSON, CSV et Excel (avec timestamp automatique)
+  
+<br>
+<b>Vérification dans Docker</b>  
+<br>  
+<br>
+
+![Docker](images/docker.jpg "Titre de l'image").
+
+🖱️ [Log de Docker](logs/docker.log)
 
   ### AWS
 
