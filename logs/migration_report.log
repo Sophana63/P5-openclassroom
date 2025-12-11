@@ -1,0 +1,85 @@
+2025-11-27 18:06:00,655 - INFO - Connexion MongoDB établie
+2025-11-27 18:06:00,657 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-11-27 18:06:00,657 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-11-27 18:06:00,788 - INFO - Début vérification intégrité données
+2025-11-27 18:06:00,817 - INFO - Vérification intégrité terminée
+2025-11-27 18:06:01,831 - INFO - Migration réussie - 55500 documents - durée 0:00:01.160189
+2025-11-27 18:06:01,831 - INFO - ==========================================
+2025-11-27 18:06:31,140 - INFO - Connexion MongoDB établie
+2025-11-27 18:06:31,142 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-11-27 18:06:31,142 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-11-27 18:06:31,273 - INFO - Début vérification intégrité données
+2025-11-27 18:06:31,292 - INFO - Vérification intégrité terminée
+2025-11-27 18:06:32,319 - INFO - Migration réussie - 55500 documents - durée 0:00:01.163360
+2025-11-27 18:06:32,319 - INFO - ==========================================
+2025-11-27 18:08:23,804 - INFO - Connexion MongoDB établie
+2025-11-27 18:08:23,806 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-11-27 18:08:23,806 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-11-27 18:08:23,935 - INFO - Début vérification intégrité données
+2025-11-27 18:08:23,953 - INFO - Vérification intégrité terminée
+2025-11-27 18:08:24,966 - INFO - Migration réussie - 55500 documents - durée 0:00:01.146636
+2025-11-27 18:08:24,966 - INFO - Date : 2025-11-27 18:08:23.806868 
+2025-11-27 18:08:24,966 - INFO - ==========================================
+2025-12-06 20:03:44,627 - ERROR - Erreur connexion : Username and password must be escaped according to RFC 3986, use urllib.parse.quote_plus
+2025-12-06 20:07:00,390 - ERROR - Connexion échouée : 'MongoDBConnection' object has no attribute 'username'
+2025-12-06 20:10:24,648 - ERROR - Connexion échouée : localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 69348d921ac7f86b48e1eac5, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-12-06 20:14:58,154 - INFO - Connexion MongoDB établie
+2025-12-06 20:14:58,155 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-12-06 20:14:58,155 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-12-06 20:14:58,325 - INFO - Début vérification intégrité données
+2025-12-06 20:14:58,345 - INFO - Vérification intégrité terminée
+2025-12-06 20:14:59,164 - INFO - Migration réussie - 55500 documents - durée 0:00:00.993874
+2025-12-06 20:14:59,164 - INFO - Date : 2025-12-06 20:14:58.155532 
+2025-12-06 20:14:59,164 - INFO - ==========================================
+2025-12-06 20:20:01,911 - INFO - Connexion MongoDB établie
+2025-12-06 20:20:01,912 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-12-06 20:20:01,913 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-12-06 20:20:02,091 - INFO - Début vérification intégrité données
+2025-12-06 20:20:02,111 - INFO - Vérification intégrité terminée
+2025-12-06 20:20:02,927 - INFO - Migration réussie - 55500 documents - durée 0:00:01.002919
+2025-12-06 20:20:02,928 - INFO - Date : 2025-12-06 20:20:01.913282 
+2025-12-06 20:20:02,928 - INFO - ==========================================
+2025-12-11 11:04:59,800 - INFO - Connexion MongoDB établie
+2025-12-11 11:04:59,802 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-12-11 11:52:38,232 - INFO - Connexion MongoDB établie
+2025-12-11 11:52:38,276 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-12-11 11:52:38,485 - INFO - Début vérification intégrité données
+2025-12-11 11:52:38,502 - INFO - Vérification intégrité terminée
+2025-12-11 11:52:39,477 - INFO - Migration réussie - 55500 documents - durée 0:00:01.189206
+2025-12-11 11:52:39,478 - INFO - Date : 2025-12-11 11:52:38.276152 
+2025-12-11 11:52:39,478 - INFO - ==========================================
+2025-12-11 11:52:39,496 - INFO - Mise à jour patient : P55501 → {'Age': 46, 'Medical Condition': 'Diabète de type 2 stabilisé', 'Test Results': 'Normal'}
+2025-12-11 11:52:39,498 - WARNING - Suppression patient : P55501 | John Doe
+2025-12-11 12:02:46,289 - INFO - Connexion MongoDB établie
+2025-12-11 12:02:46,290 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-12-11 12:02:46,314 - INFO - Connexion MongoDB établie
+2025-12-11 12:02:46,397 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-12-11 12:02:46,575 - INFO - Début vérification intégrité données
+2025-12-11 12:02:46,593 - INFO - Vérification intégrité terminée
+2025-12-11 12:02:47,563 - INFO - Migration réussie - 55500 documents - durée 0:00:01.153965
+2025-12-11 12:02:47,564 - INFO - Date : 2025-12-11 12:02:46.397422 
+2025-12-11 12:02:47,564 - INFO - ==========================================
+2025-12-11 12:02:47,579 - INFO - Mise à jour patient : P55501 → {'Age': 46, 'Medical Condition': 'Diabète de type 2 stabilisé', 'Test Results': 'Normal'}
+2025-12-11 12:02:47,580 - WARNING - Suppression patient : P55501 | John Doe
+2025-12-11 12:08:34,866 - INFO - Connexion MongoDB établie
+2025-12-11 12:08:34,867 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-12-11 12:08:34,890 - INFO - Connexion MongoDB établie
+2025-12-11 12:08:34,950 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-12-11 12:08:35,132 - INFO - Début vérification intégrité données
+2025-12-11 12:08:35,150 - INFO - Vérification intégrité terminée
+2025-12-11 12:08:36,153 - INFO - Migration réussie - 55500 documents - durée 0:00:01.191507
+2025-12-11 12:08:36,154 - INFO - Date : 2025-12-11 12:08:34.950885 
+2025-12-11 12:08:36,154 - INFO - ==========================================
+2025-12-11 12:08:36,169 - INFO - Mise à jour patient : P55501 → {'Age': 46, 'Medical Condition': 'Diabète de type 2 stabilisé', 'Test Results': 'Normal'}
+2025-12-11 12:08:36,171 - WARNING - Suppression patient : P55501 | John Doe
+2025-12-11 12:12:15,310 - INFO - Connexion MongoDB établie
+2025-12-11 12:12:15,311 - INFO - Ancienne collection supprimée avant nouvelle migration
+2025-12-11 12:12:15,333 - INFO - Connexion MongoDB établie
+2025-12-11 12:12:15,369 - INFO - === DÉBUT DE LA MIGRATION ===
+2025-12-11 12:12:15,547 - INFO - Début vérification intégrité données
+2025-12-11 12:12:15,565 - INFO - Vérification intégrité terminée
+2025-12-11 12:12:16,564 - INFO - Migration réussie - 55500 documents - durée 0:00:01.183576
+2025-12-11 12:12:16,565 - INFO - Date : 2025-12-11 12:12:15.369792 
+2025-12-11 12:12:16,565 - INFO - ==========================================
+2025-12-11 12:12:16,581 - INFO - Mise à jour patient : P55501 → {'Age': 46, 'Medical Condition': 'Diabète de type 2 stabilisé', 'Test Results': 'Normal'}
+2025-12-11 12:12:16,583 - WARNING - Suppression patient : P55501 | John Doe
